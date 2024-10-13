@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config(); // These are .env variables.
 
 const config = {
   env: process.env.NODE_ENV || 'dev',
@@ -7,6 +7,8 @@ const config = {
   dbUrl: process.env.DATABASE_URL,
   apiKey: process.env.API_KEY,
   jwtSecret: process.env.JWT_SECRET,
+  appMailPassword: process.env.APP_MAIL_PASSWORD,
+  appMailEmail: process.env.APP_MAIL_EMAIL,
 };
 
 module.exports = { config };
